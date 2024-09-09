@@ -1,0 +1,28 @@
+5).
+<div id="div1">
+  <p id="p1" style="color: blue;">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+
+<script>
+
+
+	//changing the color of the paragraph when hover over it.........
+
+document.getElementById('p1').addEventListener("mouseover",function(){
+	document.getElementById('p1').style.color="#FF0000";
+})
+document.getElementById('p1').addEventListener("mouseleave",function(){
+	document.getElementById('p1').style.color="blue";
+})
+
+
+//method 2
+
+const	 p= document.querySelector('#myparagraph');
+p.addEventListener	('mouseover',()=>{
+	p.style.color = 'red';
+});
+
+
